@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".6"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/note_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:cropToPadding="true"
+                        android:focusable="true"
+                        android:labelFor="@+id/note_photo"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/ic_image_black_24dp"
+
+                        />
+
+                    <ImageButton
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/note_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#14b5fb"
+                        android:labelFor="@+id/note_camera"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note_title"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/icons"
+                        android:textSize="19sp"
+
+                        />
+
+                    <EditText
+                        android:backgroundTint="@color/colorAccent"
+                        android:gravity="start|bottom"
+                        android:textSize="17sp"
+                        android:id="@+id/note_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoCorrect|textCapSentences"
+                        android:textColor="@color/icons"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:background="#22f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                >
+
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textSize="19sp"
+                        android:textColor="@color/primary_light"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        >
+
+                        <EditText
+                            android:background="@android:color/transparent"
+                            android:textSize="17sp"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="15"
+                            android:id="@+id/note_note"
+                            android:textColor="@color/primary_text"
+                            />
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/note_finished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/finished"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="17sp"/>
+
+
+                    <Button
+                        android:id="@+id/note_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#14b5fb"
+                        android:text="@string/share_note"
+                        android:textColor="@color/icons"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

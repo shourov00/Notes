@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Notes</string>
+
+    <string name="note_title">Title</string>
+    <string name="note_date">Date</string>
+    <string name="note">Note:</string>
+    <string name="finished">Finished</string>
+    <string name="share_note">Share</string>
+    <string name="new_crime">Add Note</string>
+    <string name="show_notes">Show Notes</string>
+    <string name="hide_notes">Hide Notes</string>
+    <string name="note_format">%1$d crimes</string>
+    <string name="no_note">You don\'t have any notes</string>
+
+    <string name="note_report">%1$s!\nThe note was taken on %2$s. %3$s, and %4$s    </string>
+    <string name="nore_report_solved">The note is finished</string>
+    <string name="note_report_unsolved">The note is not finished</string>
+    <string name="note_report_no_note">there is no note.</string>
+    <string name="note_report_note">the note is: \n%s</string>
+    <string name="note_report_subject">Note</string>
+    <string name="send_report">Send note via</string>
+
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$d crime</item>
+        <item quantity="other">%1$d crimes</item>
+    </plurals>
+
+</resources>
